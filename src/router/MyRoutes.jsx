@@ -14,15 +14,16 @@ const MyRoutes = () => {
             {/* HEADER Y NAVEGACION */}
             <Navbar />
             {/* CONTENIDO CENTRAL */}
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/inicio" element={<Home />} />
-                <Route path="/portfolio" element={<Portfolio />} />
-                <Route path="/servicios" element={<Services />} />
-                <Route path="/curriculum" element={<Curriculum />} />
-                <Route path="/contacto" element={<Contact />} />
-            </Routes>
-            <hr />
+            <section className="content">
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/inicio" element={<Home />} />
+                    <Route path="/portfolio" element={<Portfolio />} />
+                    <Route path="/servicios" element={<Services />} />
+                    <Route path="/curriculum" element={<Curriculum />} />
+                    <Route path="/contacto" element={<Contact />} />
+                </Routes>
+            </section>
             {/* FOOTER */}
             <Footer />
         </BrowserRouter>
