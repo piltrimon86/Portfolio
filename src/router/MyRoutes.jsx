@@ -5,12 +5,14 @@ import Portfolio from '../components/Portfolio'
 import Services from '../components/Services'
 import Curriculum from '../components/Curriculum'
 import Contact from '../components/Contact'
+import Navbar from '../components/layout/Navbar'
+import Footer from '../components/layout/Footer'
 
 const MyRoutes = () => {
     return (
         <BrowserRouter>
             {/* HEADER Y NAVEGACION */}
-
+            <Navbar />
             {/* CONTENIDO CENTRAL */}
             <Routes>
                 <Route path="/" element={<Home />} />
@@ -20,8 +22,9 @@ const MyRoutes = () => {
                 <Route path="/curriculum" element={<Curriculum />} />
                 <Route path="/contacto" element={<Contact />} />
             </Routes>
-
+            <hr />
             {/* FOOTER */}
+            <Footer />
         </BrowserRouter>
     )
 }
