@@ -16,16 +16,16 @@ const Navbar = () => {
                             className={({ isActive }) =>
                                 isActive ? 'active' : ''
                             }>
-                            Inicio
+                            Sobre Mí
                         </NavLink>
                     </li>
                     <li>
                         <NavLink
-                            to="/portfolio"
+                            to="/proyectos"
                             className={({ isActive }) =>
                                 isActive ? 'active' : ''
                             }>
-                            Portfolio
+                            Proyectos
                         </NavLink>
                     </li>
                     <li>

@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
-import Home from '../components/Home'
-import Portfolio from '../components/Portfolio'
+import AboutMe from '../components/AboutMe'
+import Projects from '../components/Projects'
 import Services from '../components/Services'
 import Curriculum from '../components/Curriculum'
 import Contact from '../components/Contact'
@@ -17,8 +17,8 @@ const MyRoutes = () => {
             <section className="content">
                 <Routes>
                     <Route path="/" element={<Navigate to="/inicio" />} />
-                    <Route path="/inicio" element={<Home />} />
-                    <Route path="/portfolio" element={<Portfolio />} />
+                    <Route path="/inicio" element={<AboutMe />} />
+                    <Route path="/proyectos" element={<Projects />} />
                     <Route path="/servicios" element={<Services />} />
                     <Route path="/curriculum" element={<Curriculum />} />
                     <Route path="/contacto" element={<Contact />} />
